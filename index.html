@@ -6,11 +6,6 @@
     <title>Practice</title>
     
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
         .back {
             background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20220422/pngtree-classic-black-abstract-background-image_1074080.jpg);
             background-size: cover;
@@ -23,85 +18,283 @@
             z-index: -1;
         }
 
-        header {
-            text-align: center;
-            padding-top: 15px;
-            color: white;
+        .container {
+           
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+            max-width: 1200px; 
+            padding-left: 5px;
         }
 
-        header a {
+        .content-left img{
+
+            width: 500px;
+            height: 440px;
+
+           
+        }
+
+        
+
+        .logo {
+            display: flex;
+            
+           
+        }
+
+        .logo img {
+            width: 50px;
+            height: auto;
+            
+            padding-left: 2px;
+        }
+
+        .logo h1 {
+            font-size: 35px;
+            margin: 0;
             color: white;
-            padding: 0 10px;
+            
+        }
+
+        .navigation {
+            display: flex;
+            align-items: center;
+        }
+
+        .navigation a {
+            color: white;
             text-decoration: none;
+            margin-left: 20px; 
+            font-size: 20px;
         }
 
-        h1 {
-            margin: 0;
-            padding: 15px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 24px;
+        .content-left {
+            max-width: 1200px; 
+           overflow: hidden;
+           color: white;
+           
         }
 
-        h1 b {
-            color: rgb(255, 31, 31);
+        .left-image{
+            float: left;
+            margin-right: 20px;
         }
 
-        h1 i {
-            color: white;
-            margin-left: 5px;
+        .right-text{
+            overflow: visible;
+            padding-top: 9px;
         }
 
-        footer {
+
+
+        .footer {
             text-align: center;
+            margin-top: 10px;
             color: white;
-            padding: 15px;
+            font-size: 15px;
+        }
+        
+        @media only screen and (max-width: 400px) {
+
+            .back {
+            background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20220422/pngtree-classic-black-abstract-background-image_1074080.jpg);
+            background-size: cover;
+            background-position: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+            
+            
+            
+            
+            
+            .container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .logo {
+                margin-bottom: 15px;
+            }
+
+            .navigation {
+                margin-top: 15px;
+                align-content: center;
+            }
+
+            .content-left img{
+
+                width: 180px;
+                height: 150px;
+
+
+            }
+
+            .right-text{
+            overflow: visible;
         }
 
-        footer h2 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 14px;
-        }
-
-        footer h2 a {
-            padding: 0 5px;
-        }
-
-        footer p {
-            margin: 0;
-            font-size: 14px;
         }
     </style>
 </head>
-<body>
+<body bgcolor="black">
     <div class="back"></div>
     <header>
-        <h1>
-            <b>Port</b><i>folio</i>
-        </h1>
+        <div class="container" style="padding-right: 5px;">
+            <div class="logo" style="padding-right: 5px;">
+                <img src="logo.jpg" alt="Logo">
+                <h1><font size="36px">Daily</font><font color="red" size="36px">Dead</font><font color="white" size="34px"><i>news.com</i></font></h1>
+            </div>
+            <nav class="navigation">
+                <a href="#">Home</a>
+                <a href="#">News</a>
+                <a href="#">About us</a>
+                <a href="https://www.google.com/">Contact us</a>
+            </nav>
+        </div>
     </header>
 
-    <h2 style="text-align: center;">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd1PyiGgGPv213g8PDs7AlzCR8_6aDSgYq4DkzvUjfGw&s" alt="Image">
-    </h2>
 
-    <footer>
-        <h2>
-            <a href="#">Home</a>
-            <a href="#">News</a>
-            <a href="#">About us</a>
-            <a href="https://www.google.com/">Contact us</a>
-        </h2>
+    <hr>
+
+    <div class="content-left">
+        <h2><b><font size="18px">Pune Porsche crash: After outcry over bail, juvenile court sends teen to observation home.</font></b></h2>
+           
+        <br>
+        
+        <img src="https://media.assettype.com/newindianexpress%2F2024-05%2F3d3f9e05-963c-4b21-aed0-bfd005cd0155%2FPTI05_21_2024_000177B.jpg?w=1200&auto=format%2Ccompress&fit=max" alt="discription of image" class="left-image" >
+            <p class="right-text" >
+               <font size="4.5px">PUNE: Following an outcry over the quick grant of bail, the Juvenile Justice Board (JJB) here on Wednesday remanded a 17-year-old youth allegedly involved in a car accident that claimed two lives to an observation home till June 5.
+
+More than 30 minors are currently lodged at the observation home, located at the same premises where the hearing on the police's review petition in connection with the case involving the teenager took place on Wednesday, an official said.
+
+The sessions court, elsewhere, remanded his father, a real estate developer, in police custody.
+
+While the police said that the JJB on Wednesday evening cancelled the bail granted to the minor three days ago, his lawyer claimed that there was no cancellation of bail but only a modification of the earlier order.
+
+The JJB had on Sunday granted bail to the teeanger hours after the Porsche car allegedly driven by him knocked down and killed two IT professionals in their 20s on a motorbike.
+
+It also asked him to write a 300-word essay on road accidents, an order that drew an onslaught of criticism.
+
+Police then approached the JJB again, seeking a review of its order.
+
+"The Child-in-Conflict with Law (CCL) was immediately sent to the Nehru Udyog Kendra observation home, located at Yerawada, where he is staying with the other CCLs," the official from the facility said.
+
+A senior police official said during his stay at the observation home, the juvenile will undergo psychological assessments.
+
+Police have registered a First Information Report against the minor under IPC sections 304 (culpable homicide not amounting to murder), 304 A (causing death by negligence), 279 (rash driving ), 337 (causing hurt by an act which endangers human life), 338 (causing grievous hurt by an act endangering life or personal safety) and relevant sections of the Motor Vehicles Act.
+
+As per the police, he was drunk at the time.
+
+The sessions court earlier on Wednesday remanded Vishal Agarwal (50), the minor's father, and two employees of Hotel Black Club Nitesh Shevani and Jayesh Gavkar, in police custody till May 24.
+
+The teenager, before the accident, had allegedly consumed alcohol at Hotel Black Club.
+
+Police registered a case against his father under sections 75 and 77 of the Juvenile Justice Act, and against the owner and employees of two bars which the boy had visited before Sunday's accident for 'serving alcohol to an underage person'.
+
+Section 75 deals with "willful neglect of a child, or exposing a child to mental or physical illnesses," while section 77 deals with supplying a child with intoxicating liquor or drugs.
+
+According to the FIR, the real estate developer gave his son the car despite knowing that the boy did not have a driving license, thus endangering his life, and allowed him to party even while knowing that he drinks alcohol.
+
+Agarwal was arrested from Chhatrapati Sambhajinagar.
+
+The prosecution demanded police custody of seven days for the father and the other two, stating that the police wanted to investigate why the father allowed his son to drive the car which did not have a number plate.
+
+They also need to investigate why the man absconded after a case was registered against the son.
+
+He had in his possession a simple no-frills mobile phone when arrested, and "the police need to investigate where are his other phones," said the public prosecutor.
+
+The driver of the Porsche who was with the juvenile at the time of the accident had offered to drive, but the juvenile declined the offer, the prosecution claimed.
+
+Earlier, while Agarwal was being brought to the sessions court in Shivajinagar area in a police vehicle, some persons allegedly tried to throw ink at it.
+
+The political slugfest over the accident continued on Wednesday with Maharashtra deputy Chief Minister Devendra Fadnavis stating that it did not "behove" Congress leader Rahul Gandhi to "politicise" the incident.
+
+Commenting on the accident, Gandhi had said if an ordinary truck or cab driver were to cause it, he would be jailed for years, but there was different justice for the son of a rich man, and Congress wanted to change this system.
+
+Fadnavis said the police responded to the situation in the right way.
+
+Shiv Sena (UBT) leader Ambadas Danve, on the other hand, asked whether Fadnavis's visit to Pune following the car crash was aimed at shielding the investigative agencies.
+
+Fadnavis, who hold the home portfolio, visited Pune only after there was an uproar on social media over the incident, Danve claimed.
+
+Vanchit Bahujan Aghadi leader Prakash Ambedkar claimed that police spent more time asking questions about the relationship between the two IT professionals who were killed.
+
+Victims Anish Awadhiya and Ashwini Koshta, both 24-year-old, hailing from Madhya Pradesh and working in Pune, were riding on a motorbike when the Porsche allegedly driven by the teenager hit them near Kalyani Nagar junction in the early hours of Sunday.
+
+In a post on X, Ambedkar said, "Officers at Yerawada police station spent more time questioning the relationship between Anish and Ashwini while the accused was allegedly served burger and pizza."
+
+As per the controversial bail order passed by the Juvenile Justice Board hours after the incident on Sunday, the teenager's grandfather had "given an assurance that he will keep the Child-in-Conflict with Law (CCL) away from any bad company and he will concentrate on his study or any vocational course which is useful for his career."
+
+"The CCL will write an essay of 300 words on the topic of road accidents and their solutions," the order said, eliciting much acerbic commentary on social media.
+
+The political slugfest over the accident continued on Wednesday with Maharashtra deputy Chief Minister Devendra Fadnavis stating that it did not "behove" Congress leader Rahul Gandhi to "politicise" the incident.
+
+Commenting on the accident, Gandhi had said if an ordinary truck or cab driver were to cause it, he would be jailed for years, but there was different justice for the son of a rich man, and Congress wanted to change this system.
+
+Fadnavis said the police responded to the situation in the right way.
+
+Shiv Sena (UBT) leader Ambadas Danve, on the other hand, asked whether Fadnavis's visit to Pune following the car crash was aimed at shielding the investigative agencies.
+
+Fadnavis, who hold the home portfolio, visited Pune only after there was an uproar on social media over the incident, Danve claimed.
+
+Vanchit Bahujan Aghadi leader Prakash Ambedkar claimed that police spent more time asking questions about the relationship between the two IT professionals who were killed.
+
+Victims Anish Awadhiya and Ashwini Koshta, both 24-year-old, hailing from Madhya Pradesh and working in Pune, were riding on a motorbike when the Porsche allegedly driven by the teenager hit them near Kalyani Nagar junction in the early hours of Sunday.
+
+In a post on X, Ambedkar said, "Officers at Yerawada police station spent more time questioning the relationship between Anish and Ashwini while the accused was allegedly served burger and pizza."
+
+As per the controversial bail order passed by the Juvenile Justice Board hours after the incident on Sunday, the teenager's grandfather had "given an assurance that he will keep the Child-in-Conflict with Law (CCL) away from any bad company and he will concentrate on his study or any vocational course which is useful for his career."
+
+"The CCL will write an essay of 300 words on the topic of road accidents and their solutions," the order said, eliciting much acerbic commentary on social media.
+
+
+</font>   </p>     
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="content-left">
+        <h2><b><font size="18px">Jayant Sinha responds to party's show cause notice for 'skipping campaigning', says he 'unfairly targeted'</font></b></h2>
+           
+        <br>
+
+        <img src="https://media.assettype.com/TNIE%2Fimport%2F2019%2F5%2F4%2Foriginal%2F2015-07-27T075523Z_1_LYNXNPEB6Q09A_RTROPTP_3_INDIA-ECONOMY-FINMIN.png?rect=0%2C0%2C728%2C410&w=1200&auto=format%2Ccompress&fit=max" alt="discription of image" class="left-image" >
+            <p class="right-text" >
+                <font size="4.5px">Days after the BJP issued a show cause notice to its MP Jayant Sinha for ' not taking interest in poll campaign'. the former union minister on Wednesday responded saying that he was being “unfairly targeted”.
+
+The party on May 20 issued a show cause notice to Jayant Sinha for not participating in campaigning after MLA Manish Jaiswal was declared candidate from the Hazaribag Lok Sabha seat, thereby “maligning” the party’s image.
+
+Jayant Sinha was denied a ticket to contest the Lok Sabha elections from Hazaribagh.
+
+Meanwhile, late on Wednesday, Sinha posted his reply on social media platform X saying that it was “beyond his understanding” that the letter was sent when the elections were over and that he was “extremely surprised” to know that the notice was also released to the media.
+
+In the letter addressed to BJP State General Secretary Sahu, Sinha said that he had already had a conversation with BJP National President JP Nadda on March 2 where he stated that he had requested him to be relieved from active election duties and also posted the same on platform X.
+
+He had then said that he wanted to focus on issues arising from global climate change, but would, however, “gladly continue” to work with the party on the economic and government related issues.
+
+"Meanwhile, if the party wanted me to participate in any kind of election activities, then definitely you could have contacted me. However, after my announcement on March 2, no senior party functionary or MP/MLA from Jharkhand contacted me. I was not invited to any party program, rally or organisational meeting. If Babulal Marandi ji wanted to include me in the programs then he could have definitely invited me but he did not do so,” Sinha wrote on Wednesday.
+</font> </p>     
+    </div>
+
+    <br>
+
+    
+
+
+    <hr>
+
+    <footer class="footer">
         <p>
-            <b>Portfolio</b> created by R-D&co.
-        </p>
-        <h5>About Us</h5>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque at, doloremque architecto quisquam animi mollitia debitis cum iste aperiam error a id tempore harum consequatur inventore natus vel repudiandae suscipit eos unde voluptatibus cumque iusto! Facere, tenetur. Eum eligendi illo laborum quo, corporis rerum deserunt. Necessitatibus doloremque culpa laudantium rem.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius illum excepturi dolore ab dolorem neque vitae quisquam suscipit esse doloribus, aut enim aspernatur iusto tenetur voluptatibus distinctio nihil voluptate similique amet voluptas! Veniam tenetur rem odio aut, veritatis officia nisi odit magni, repudiandae, laudantium numquam neque laborum tempore mollitia ratione.
+            <font color="red" size="17px">Port</font><font color="white" size="15px"><i>folio </i></font>created by Rehan&co.
         </p>
     </footer>
 </body>
