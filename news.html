@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+        #more { display: none; }
+
+        .back {
+            background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20220422/pngtree-classic-black-abstract-background-image_1074080.jpg);
+            background-size: cover;
+            background-position: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+            max-width: 1200px; 
+            padding-left: 5px;
+        }
+
+        .logo {
+            display: flex;
+        }
+
+        .logo img {
+            width: 50px;
+            height: auto;
+            padding-left: 2px;
+        }
+
+        .name {
+            display: flex;
+            
+        }
+
+        .name h2, .name h3, .name h4 {
+            margin: 0;
+        }
+
+        .name h2 {
+            font-size: 45px;
+            color: white;
+        }
+
+        .name h3 {
+            font-size: 45px;
+            color: red;
+        }
+
+        .name h4 {
+            font-size: 15px;
+            color: white;
+        }
+
+        .navigation {
+            display: flex;
+            align-items: center;
+        }
+
+        .navigation a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px; 
+            font-size: 20px;
+        }
+
+        .content-left {
+            padding-left: 16px;
+            max-width: 1200px; 
+            overflow: hidden;
+            color: white;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 10px;
+            color: white;
+            font-size: 15px;
+        }
+
+        @media only screen and (max-width: 400px) {
+            .container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .logo img {
+                width: 35px;
+                height: auto;
+            }
+
+            .name h2, .name h3 {
+                font-size: 30px;
+            }
+
+            .navigation {
+                margin-top: 15px;
+                align-content: center;
+            }
+
+            .navigation a {
+                font-size: 17px;
+                padding-top: 20px;
+            }
+
+            .content-left img {
+                width: 390px;
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body bgcolor="black">
+    <div class="back"></div>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://scontent.fccu2-4.fna.fbcdn.net/v/t39.30808-6/441501173_438325755491209_4403443031170916132_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=f727a1&_nc_ohc=tEnfjgXO5fIQ7kNvgEtmCXT&_nc_ht=scontent.fccu2-4.fna&oh=00_AYCdoVKx-JZY9p-0_J5C035qShsrrHFoGeKJnJis_mf52w&oe=66B6A7C3" alt="Logo">
+                <div class="name">
+                    <h2>Daily</h2>
+                    <h3>Dead</h3>
+                    <h4><i>news.com</i></h4>
+                </div>
+            </div>
+            <nav class="navigation">
+                <a href="home.html">Home</a>
+                <a href="news.html">News</a>
+                <a href="#">About us</a>
+                <a href="#">JIS headlines</a>
+            </nav>
+        </div>
+    </header>
+
+    <hr>
+
+    <div class="content-left">
+        <h2><b>Pune Porsche crash: After outcry over bail, juvenile court sends teen to observation home.</b></h2>
+        <br>
+        <img src="https://media.assettype.com/newindianexpress%2F2024-05%2F3d3f9e05-963c-4b21-aed0-bfd005cd0155%2FPTI05_21_2024_000177B.jpg?w=1200&auto=format%2Ccompress&fit=max" alt="Description of image" class="left-image">
+        <p class="right-text">
+            <font size="4.5px">PUNE: Following an outcry over the quick grant of bail, the Juvenile Justice Board (JJB) here on Wednesday remanded a 17-year-old youth allegedly involved in a car accident that claimed two lives to an observation home till June 5. 
+            More than 30 minors are currently lodged at the observation home, located at the same premises where the hearing on the police's review petition in connection with the case involving the teenager took place on Wednesday, an official said.<span id="dots">...</span><span id="more">
+            The sessions court, elsewhere, remanded his father, a real estate developer, in police custody...
+            </span></font>
+        </p>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="content-left">
+        <h2><b>Jayant Sinha responds to party's show cause notice for 'skipping campaigning', says he 'unfairly targeted'</b></h2>
+        <br>
+        <img src="https://media.assettype.com/TNIE%2Fimport%2F2019%2F5%2F4%2Foriginal%2F2015-07-27T075523Z_1_LYNXNPEB6Q09A_RTROPTP_3_INDIA-ECONOMY-FINMIN.png?rect=0%2C0%2C728%2C410&w=1200&auto=format%2Ccompress&fit=max" alt="Description of image" class="left-image">
+        <p class="right-text">
+            <font size="4.5px">Days after the BJP issued a show cause notice to its MP Jayant Sinha for 'not taking interest in poll campaign', the former union minister on Wednesday responded saying that he was being “unfairly targeted”. 
+            The party on May 20 issued a show cause notice to Jayant Sinha for not participating in campaigning after MLA Manish Jaiswal was declared candidate from the Hazaribag Lok Sabha seat, thereby “maligning” the party’s image.<span id="dots2">...</span><span id="more2">
+            Meanwhile, late on Wednesday, Sinha posted his reply on social media platform X...
+            </span></font>
+        </p>
+        <button onclick="myFunction2()" id="myBtn2">Read more</button>
+    </div>
+
+    <br>
+    <hr>
+
+    <footer class="footer">
+        <p>Rehan&co.</p>
+    </footer>
+
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+
+        function myFunction2() {
+            var dots = document.getElementById("dots2");
+            var moreText = document.getElementById("more2");
+            var btnText = document.getElementById("myBtn2");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+</body>
+</html>
